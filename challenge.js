@@ -72,7 +72,7 @@ function addComment(event) {
   list.appendChild(elm);
 }
 
-(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
   startTimer();
 
   let elm = document.getElementById('+');
@@ -90,4 +90,4 @@ function addComment(event) {
   elm = document.getElementById('comment-form');
   if (elm)
     elm.onsubmit = addComment;
-})();
+});
